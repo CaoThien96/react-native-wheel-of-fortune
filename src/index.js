@@ -258,7 +258,7 @@ class WheelOfFortune extends Component {
                       origin={`${x}, ${y}`}
                     >
                       {this._textRender(x, y, number, i)}
-                      <ImageSVG x={x - 12} y={y} width='24' href={this.Rewards[index]?.image || 'https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png?1644979850'} />
+                      <ImageSVG x={x - 12} y={y} width='24' href={this.Rewards[i]?.image || 'https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png?1644979850'} />
                     </G>
 
                   </G>
