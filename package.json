@@ -1,6 +1,6 @@
 {
   "name": "rn-wheel-of-fortune",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React Native Wheel Of Fortune Component.",
   "main": "index.js",
   "scripts": {

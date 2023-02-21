@@ -179,7 +179,7 @@ class WheelOfFortune extends Component {
       fontSize={this.fontSize}>
         {
           <TSpan x={x} dy={68}>
-          {y}
+          {number}
             </TSpan>
         }
     </Text>
