@@ -177,27 +177,11 @@ class WheelOfFortune extends Component {
       }
       textAnchor="middle"
       fontSize={this.fontSize}>
-      {Array.from({ length: number.length }).map((_, j) => {
-        // Render reward text vertically
-        if (this.props.options.textAngle === 'vertical') {
-          return (
-            <TSpan x={x} dy={this.fontSize} key={`arc-${i}-slice-${j}`}>
-              {number.charAt(j)}
+        {
+          <TSpan x={x} dy={68}>
+          {y}
             </TSpan>
-          );
         }
-        // Render reward text horizontally
-        else {
-          return (
-            <TSpan
-              y={y}
-              dx={this.fontSize * 0.07}
-              key={`arc-${i}-slice-${j}`}>
-              {number.charAt(j)}
-            </TSpan>
-          );
-        }
-      })}
     </Text>
   );
 
@@ -289,7 +273,8 @@ class WheelOfFortune extends Component {
               </View>
             </View>
           </View>
-          <Animated.View style={[StyleSheet.absoluteFill, {
+          <Animated.View pointerEvents={'box-none'} style={[
+            StyleSheet.absoluteFill, {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
