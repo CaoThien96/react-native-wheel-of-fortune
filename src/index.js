@@ -177,11 +177,11 @@ class WheelOfFortune extends Component {
       }
       textAnchor="middle"
       fontSize={this.fontSize}>
-        {
-          <TSpan x={x} dy={68}>
+      {
+        <TSpan x={x} dy={68}>
           {number}
-            </TSpan>
-        }
+        </TSpan>
+      }
     </Text>
   );
 
@@ -275,23 +275,23 @@ class WheelOfFortune extends Component {
           </View>
           <Animated.View pointerEvents={'box-none'} style={[
             StyleSheet.absoluteFill, {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            transform: [
-              {
-                rotate: this._angle.interpolate({
-                  inputRange: [-this.oneTurn, 0, this.oneTurn],
-                  outputRange: [
-                    `${this.oneTurn}deg`,
-                    `0deg`,
-                    `-${this.oneTurn}deg`,
-                  ],
-                }),
-              },
-              { translateY: -88 }
-            ]
-          }]}>
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              transform: [
+                {
+                  rotate: this._angle.interpolate({
+                    inputRange: [-this.oneTurn, 0, this.oneTurn],
+                    outputRange: [
+                      `${this.oneTurn}deg`,
+                      `0deg`,
+                      `-${this.oneTurn}deg`,
+                    ],
+                  }),
+                },
+                { translateY: -88 }
+              ]
+            }]}>
             {this._renderKnob()}
           </Animated.View>
         </Animated.View>
@@ -394,9 +394,10 @@ export default WheelOfFortune;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    width: width,
+    height: height / 2,
   },
   content: {},
   startText: {
